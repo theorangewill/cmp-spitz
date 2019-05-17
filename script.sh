@@ -1,4 +1,4 @@
 rm -rf bin
-./build.sh
+./build-cmp-bysamples.sh
 rm -rf run
-./run-cmp.sh
+./run-cmp-bysamples.sh
