@@ -1,19 +1,27 @@
-This is a bundle containing some examples for developing and executing modules using the SPITS programming model proposed by Borin et al. in "Efficient and Fault Tolerant Computation of Partially Idempotent Tasks".
+## CMP - Common-midpoint seismic method
+This is a seismic algorithm using the SPITZ programming model.
 
-The bundle contains a list of examples of how to develop a spits module, the reference implementation for spits, called spitz-python, and scripts to build and run the examples.
+It is defined as: "A recording-processing method where each source is recorded at a number of geophone locations and each geophone location is used to record from a number of source locations. After correcting these data for statics, normal moveout, and DMO [...], they are combined (stacked) to provide a common-midpoint section that approximates the traces that would be recorded by a coincident source and receiver at each location, but with improved discrimination against noise. The objective is to attenuate random effects and events whose dependence on offset is different from that of primary reflections." 
 
-SETTING UP FOR RUNNING:
+More in [here](https://wiki.seg.org/wiki/Dictionary:Common-midpoint_(CMP)_method).
 
-    The building script uses g++ as the default compiler, you can change it if necessary.
-    To build the examples, call build-examples.sh from inside the root of the bundle. A 'bin' directory will be created with all the examples.
+This repository is an extension of [CMP](https://github.com/theorangewill/cmp).
+There are two versions, one being parallelized by each CDP and the other by sample.
 
-RUNNING THE EXAMPLES:
 
-    To run the examples, call run-X.sh from inside the root of the bundle. A 'run' directory will be created containing the result of the execution of each example.
+## Seismic Unix
+The Seismic Unix is a open source seismic processing package. It uses a specific data syntax, the same that this program uses.
 
-    Additionally, the examples are compiled in to a self-contained, serial executable, they are named with a suffix '-serial' inside the 'bin' directory.
+[Learn more](https://wiki.seismic-unix.org/doku.php)
 
-FURTHER READING:
+[Data download](https://wiki.seismic-unix.org/tutorials:data)
 
-    Check the spitz-python's README for information on how to perform more elaborated executions and the README of each example. Also check the paper "Efficient and Fault Tolerant Computation of Partially Idempotent Tasks" to know more about the SPITS programming model and the problems it aims to solve.
+[GitHub](https://github.com/JohnWStockwellJr/SeisUnix)
+
+## SPITZ
+This is a programming model for applications with partially idempotent tasks.
+
+[GitHub](https://github.com/hpg-cepetro/spitz)
+
+[Article](https://library.seg.org/doi/10.1190/sbgf2015-072)
 
